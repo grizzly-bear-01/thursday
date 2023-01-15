@@ -1,0 +1,267 @@
+body {
+    font-family: 'Work Sans', sans-serif;
+    padding: 0;
+    margin: 0;
+
+
+}
+
+header {
+    padding: 1em;
+    background-color: blanchedalmond;
+    padding-bottom: 32em;
+    position: relative;
+}
+
+
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    padding: .5em 2em;
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+    gap: 2em;
+}
+
+.nav a {
+    color: seagreen;
+    text-decoration: none;
+}
+
+/* Headline Section  */
+
+.first-section {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+}
+
+h1 {
+    font-size: 2.5em;
+    font-weight: 900;
+}
+
+.headline {
+    text-align: center;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+
+}
+
+button {
+    font-weight: 600;
+    font-size: 15px;
+    padding: 20px 40px;
+    color: #ffffff;
+    border-radius: 10px;
+    border-style: initial;
+    background-color: #fd6d0a;
+    cursor: pointer;
+    border: 2px;
+    margin-top: 2em;
+}
+
+header::before {
+    content: "staff";
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    background-image: url(./photos/the-bear.avif);
+    width: 80%;
+    height: 680px;
+    border-radius: 10px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+
+/* Food Section  */
+
+main {
+    margin: auto 200px;
+    position: relative;
+    margin-top: 20em;
+}
+
+section {
+    margin-top: 10em;
+}
+
+.about {
+    display: flex;
+    gap: 10em;
+}
+
+.diner-pics {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.5em;
+}
+
+.diner-pics img {
+    height: 300px;
+    width: 300px;
+    border-radius: 5px;
+}
+
+.diner-description {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    text-align: justify;
+    gap: 1.5em;
+}
+
+.title {
+    text-align: left;
+    font-weight: 700;
+    font-size: 2em;
+
+}
+
+#highlight-1 {
+    color: darkgray;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#highlight-2 {
+    color: #fd6d0a;
+}
+
+/* Details Section  */
+
+.details {
+    display: flex;
+    gap: 8em;
+}
+
+.text-details {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    justify-content: space-between;
+}
+
+#highlight-3 {
+    border-left: 0.2em solid #fd6d0a;
+    padding-left: 0.5em;
+}
+
+
+.upper-details,
+.achievement-title {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+
+}
+
+.lower-details {
+    padding-left: 1.5em;
+}
+
+.reviews {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+
+}
+
+.diner-owner img {
+    width: 600px;
+    height: auto;
+    border-radius: 5px;
+    position: relative;
+}
+
+.bot {
+
+    position: absolute;
+    left: 35em;
+    top: 99em;
+    transform: translate(-50%, -50%);
+}
+
+.sub-title {
+    text-align: left;
+    font-weight: 600;
+    font-size: 1.2em;
+}
+
+/* Our Achievements  */
+
+.achievement-details {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5em;
+}
+
+.achievement-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 2em;
+    margin: auto 5em;
+
+}
+
+.achievement-title {
+    display: grid;
+    place-items: left;
+    width: 40%;
+    text-align: justify;
+}
+
+.achievements {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2em;
+    border: 5px solid cadetblue;
+    border-radius: 5px;
+    flex: 1;
+}
+
+.achievements img {
+    height: 48px;
+    width: 48px;
+}
+
+/* Sponsors  */
+
+.sponsor-title {
+    display: grid;
+    place-items: center;
+}
+
+.sponsor-icons {
+    margin: 3em auto;
+    display: flex;
+    justify-content: center;
+    gap: 2.5em;
+    align-items: center;
+}
+
+.sponsor-icons img {
+    width: 167px;
+    height: 50px;
+}
+
+/* Footer  */
+
+.footer {
+    margin: 12em;
+    background-color: antiquewhite;
+    padding: 2em;
+    text-align: center;
+}
