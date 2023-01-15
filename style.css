@@ -24,6 +24,8 @@ header {
     list-style: none;
     display: flex;
     gap: 2em;
+    font-weight: 550;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .nav a {
@@ -99,7 +101,7 @@ section {
 
 .about {
     display: flex;
-    gap: 10em;
+    gap: 5em;
 }
 
 .diner-pics {
@@ -112,6 +114,13 @@ section {
     height: 300px;
     width: 300px;
     border-radius: 5px;
+    transition: all 0.5s ease-out;
+
+}
+
+.diner-pics img:hover {
+    position: relative;
+    top: -20px;
 }
 
 .diner-description {
@@ -129,12 +138,12 @@ section {
 
 }
 
-#highlight-1 {
+.highlight-1 {
     color: darkgray;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-#highlight-2 {
+.highlight-2 {
     color: #fd6d0a;
 }
 
@@ -198,6 +207,40 @@ section {
     font-size: 1.2em;
 }
 
+/* Food Menu  */
+
+.menu {
+    display: flex;
+    gap: 5em;
+}
+
+.food-pics {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.5em;
+}
+
+.food-pics img {
+    height: 300px;
+    width: 300px;
+    border-radius: 5px;
+    transition: all 0.5s ease-out;
+
+}
+
+.food-pics img:hover {
+    position: relative;
+    top: -20px;
+}
+
+.food-description {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    text-align: justify;
+    gap: 1.5em;
+}
+
 /* Our Achievements  */
 
 .achievement-details {
@@ -235,7 +278,14 @@ section {
 .achievements img {
     height: 48px;
     width: 48px;
+    position: relative;
 }
+
+.achievements img:hover {
+    transition: 1s ease-in-out;
+    transform: rotate(1800deg);
+}
+
 
 /* Sponsors  */
 
@@ -255,6 +305,18 @@ section {
 .sponsor-icons img {
     width: 167px;
     height: 50px;
+    transition: all 1s ease;
+
+}
+
+.sponsor-icons img:hover {
+    bottom: -20px;
+    position: relative;
+}
+
+.button :hover i {
+    transition: 0.3s ease-in-out;
+    transform: rotate(360deg);
 }
 
 /* Footer  */
