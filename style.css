@@ -2,8 +2,6 @@ body {
     font-family: 'Work Sans', sans-serif;
     padding: 0;
     margin: 0;
-
-
 }
 
 header {
@@ -11,6 +9,7 @@ header {
     background-color: blanchedalmond;
     padding-bottom: 32em;
     position: relative;
+    width: 100%;
 }
 
 
@@ -33,9 +32,9 @@ header {
     text-decoration: none;
 }
 
-/* Headline Section  */
+/* Headline  */
 
-.first-section {
+.primary-text {
     display: flex;
     flex-direction: column;
     gap: 25px;
@@ -87,11 +86,11 @@ header::before {
 }
 
 
-/* Food Section  */
+/* About Section  */
 
 main {
     margin: auto 200px;
-    position: relative;
+    position: static;
     margin-top: 20em;
 }
 
@@ -196,8 +195,8 @@ section {
 .bot {
 
     position: absolute;
-    left: 35em;
-    top: 99em;
+    left: 50%;
+    top: 174em;
     transform: translate(-50%, -50%);
 }
 
@@ -326,4 +325,126 @@ section {
     background-color: antiquewhite;
     padding: 2em;
     text-align: center;
+}
+
+@media screen and (max-width: 576px) {
+    .nav-bar {
+        display: block;
+        align-items: center;
+    }
+
+    button {
+        margin-bottom: 5em;
+    }
+
+
+    /* Food Section  */
+
+    .about {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .diner-pics {
+        display: grid;
+        grid-template-columns: auto;
+        gap: 0.5em;
+    }
+
+    .diner-description {
+        display: block;
+    }
+
+    .details {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+
+    .diner-owner img {
+        position: static;
+
+    }
+
+    .bot {
+        display: none;
+
+    }
+
+    /* Food Menu  */
+
+    .menu {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+
+    .food-pics {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+
+    .food-description {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        text-align: justify;
+
+    }
+
+    /* Our Achievements  */
+
+    .achievement-details {
+        display: flex;
+        flex-direction: column;
+        gap: 3em;
+    }
+
+    .achievement-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: space-between;
+        margin: auto 0;
+
+    }
+
+    .achievement-title {
+        text-align: center;
+    }
+
+    .achievements {
+        display: flex;
+        flex-direction: column;
+        padding: 2em;
+
+    }
+
+    .achievements img {
+        position: static;
+    }
+
+
+    /* Sponsors  */
+
+    .sponsors {
+        display: grid;
+        place-items: center;
+    }
+
+
+    .sponsor-icons {
+        margin: 3em 0;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        text-align: center;
+    }
+
+    /* Footer  */
+
+    .footer {
+        margin: 0em;
+        background-color: antiquewhite;
+        padding: 0em;
+    }
 }
